@@ -1,3 +1,26 @@
 .footer {
     background-color: $color-green-vdark;
+    color: $color-gray;
+
+    .wrapper {
+        padding-top: 6.6rem;
+        padding-bottom: 6.6rem;
+    }
+
+    a:link,
+    a:visited {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    &-nav__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-nav__item {
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
 }

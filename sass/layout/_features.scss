@@ -1,3 +1,18 @@
 .features {
     background-color: $color-green-dark;
+    display: block;
+
+    background-image: url(/img/bg-pattern-home-3.svg);
+    background-repeat: no-repeat;
+    background-position: 157% 0%;
+
+    .wrapper {
+        padding-top: 10rem;
+        padding-bottom: 6.1rem;
+    }
+
+    .feature {
+        margin-bottom: 4.5rem;
+    }
+   
 }

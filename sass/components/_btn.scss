@@ -1,0 +1,18 @@
+.btn {
+    display: block;
+    width: 15.3rem;
+    height: 4.8rem;
+    background-color: transparent;
+    border: 2px solid $color-green-dark;
+    border-radius: 40px;
+    padding-top: 0.82rem;
+    margin: 0 auto;
+
+    &:link,
+    &:visited {
+        color: $color-green-dark;
+        text-decoration: none;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+}

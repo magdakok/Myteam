@@ -1,3 +1,47 @@
 .stories {
     background-color: $color-blue-dark;
+    display: block;
+
+    background-image: url(/img/bg-pattern-home-4-about-3.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    .wrapper {
+        padding-top: 14rem;
+        padding-bottom: 6.1rem;
+    }
+
+    .story {
+        margin-top: 4rem;
+        padding-top: 3.9rem;
+
+        background-image: url(/img/icon-quotes.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+       
+
+        &__person {
+            display: block;
+        }
+
+        &__position {
+            display: block;
+            margin-bottom: 1.7rem;
+        }
+
+        &__photo-box {
+            display: block;
+            width: 6.2rem;
+            height: 6.2rem;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #C4FFFE;
+            margin: 0 auto;
+
+            img {
+                height: 100%;
+                backface-visibility: hidden;
+            }
+        }
+    }
 }
