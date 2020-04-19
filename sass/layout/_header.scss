@@ -1,0 +1,37 @@
+.nav {
+    background-color: $color-primary-green;
+
+    .logo {
+        height: 3.2rem;
+    }
+    
+    .wrapper {
+        padding-top: 4.8rem;
+        padding-bottom: 4.8rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        list-style: none;
+        display: none;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.header {
+    background-color: $color-primary-green;
+    background-image: url(/img/bg-pattern-home-2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .wrapper {
+        padding-top: 3.2rem;
+        padding-bottom: 20rem;
+    }
+}
