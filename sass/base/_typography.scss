@@ -79,3 +79,18 @@ body {
         font-style: italic;
     }
 }
+
+.nav {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+
+    a:link,
+    a:visited {
+        color: $color-white;
+    }
+
+    a:hover,
+    a:active {
+        color: $color-primary-coral;
+    }
+}
