@@ -164,7 +164,7 @@ body {
 
 .header {
   background-color: #014E56;
-  background-image: url(/img/bg-pattern-home-2.svg);
+  background-image: url(img/bg-pattern-home-2.svg);
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -177,7 +177,7 @@ body {
 .features {
   background-color: #012F34;
   display: block;
-  background-image: url(/img/bg-pattern-home-3.svg);
+  background-image: url(img/bg-pattern-home-3.svg);
   background-repeat: no-repeat;
   background-position: 157% 0%;
 }
@@ -223,7 +223,7 @@ body {
 .stories {
   background-color: #004047;
   display: block;
-  background-image: url(/img/bg-pattern-home-4-about-3.svg);
+  background-image: url(img/bg-pattern-home-4-about-3.svg);
   background-repeat: no-repeat;
   background-position: top left;
 }
@@ -236,7 +236,7 @@ body {
 .stories .story {
   margin-top: 4rem;
   padding-top: 3.9rem;
-  background-image: url(/img/icon-quotes.svg);
+  background-image: url(img/icon-quotes.svg);
   background-repeat: no-repeat;
   background-position: top;
 }
