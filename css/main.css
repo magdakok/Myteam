@@ -164,7 +164,7 @@ body {
 
 .header {
   background-color: #014E56;
-  background-image: url(img/bg-pattern-home-2.svg);
+  background-image: url(/img/bg-pattern-home-2.svg);
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -177,7 +177,7 @@ body {
 .features {
   background-color: #012F34;
   display: block;
-  background-image: url(img/bg-pattern-home-3.svg);
+  background-image: url(/img/bg-pattern-home-3.svg);
   background-repeat: no-repeat;
   background-position: 157% 0%;
 }
@@ -197,8 +197,8 @@ body {
 }
 
 .footer .wrapper {
-  padding-top: 6.6rem;
-  padding-bottom: 6.6rem;
+  padding-top: 6.2rem;
+  padding-bottom: 6.2rem;
 }
 
 .footer a:link,
@@ -211,21 +211,47 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 10.7rem;
+  margin: 0 auto;
 }
 
-.footer-nav__item:not(:last-child) {
-  margin-right: 3rem;
+.footer-nav__logo {
+  margin-bottom: 2.7rem;
+  width: 9.6rem;
+}
+
+.footer-nav {
+  margin-bottom: 3rem;
+}
+
+.footer__address {
+  line-height: 2.5rem;
+}
+
+.footer-social__box {
+  margin-top: 3.7rem;
+  margin-bottom: 1.9rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 10.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .stories {
   background-color: #004047;
   display: block;
-  background-image: url(img/bg-pattern-home-4-about-3.svg);
+  position: relative;
+  background-image: url(/img/bg-pattern-home-4-about-3.svg), url(/img/bg-pattern-about-2-contact-1.svg);
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top left, 100% 111%;
 }
 
 .stories .wrapper {
@@ -236,7 +262,7 @@ body {
 .stories .story {
   margin-top: 4rem;
   padding-top: 3.9rem;
-  background-image: url(img/icon-quotes.svg);
+  background-image: url(/img/icon-quotes.svg);
   background-repeat: no-repeat;
   background-position: top;
 }

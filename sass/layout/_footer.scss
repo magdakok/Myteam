@@ -3,8 +3,8 @@
     color: $color-gray;
 
     .wrapper {
-        padding-top: 6.6rem;
-        padding-bottom: 6.6rem;
+        padding-top: 6.2rem;
+        padding-bottom: 6.2rem;
     }
 
     a:link,
@@ -15,12 +15,32 @@
 
     &-nav__list {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        width: 10.7rem;
+        margin: 0 auto;
     }
 
-    &-nav__item {
-        &:not(:last-child) {
-            margin-right: 3rem;
-        }
+    &-nav__logo {
+        margin-bottom: 2.7rem;
+        width: 9.6rem;
+    }
+
+    &-nav {
+        margin-bottom: 3rem;
+    }
+
+    &__address {
+        line-height: 2.5rem;
+    }
+
+    &-social__box {
+        margin-top: 3.7rem;
+        margin-bottom: 1.9rem;
+
+        margin-right: auto;
+        margin-left: auto;
+        width: 10.4rem;
+        display: flex;
+        justify-content: space-between;
     }
 }
