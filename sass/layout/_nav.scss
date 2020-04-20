@@ -1,0 +1,36 @@
+.nav {
+    background-color: $color-primary-green;
+
+    .logo {
+        height: 3.2rem;
+    }
+    
+    .wrapper {
+        padding-top: 4.8rem;
+        padding-bottom: 4.8rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: block;
+
+        background-color: $color-blue;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 25.5rem;
+        height: 100%;
+        z-index: 10;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__box {
+
+    }
+}
