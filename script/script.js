@@ -46,9 +46,6 @@ function navShow() {
   });
 }
 
-loadSections();
-checkVariable();
-
 function checkVariable() {
   if ( document.querySelector('.hamburger') != null ) {
     navShow();
@@ -56,3 +53,7 @@ function checkVariable() {
     window.setTimeout("checkVariable();",100);
   }
 } 
+
+loadSections();
+checkVariable();
+
