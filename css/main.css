@@ -258,6 +258,8 @@ body {
 
 .nav {
   background-color: #014E56;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .nav .logo {
@@ -278,11 +280,17 @@ body {
           align-items: center;
 }
 
+.nav .hamburger {
+  cursor: pointer;
+}
+
 .nav__link {
   text-decoration: none;
 }
 
-.nav__box-opened {
+.nav__box {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   background-color: #2C6269;
   background-image: url(/img/bg-pattern-about-1-mobile-nav-1.svg);
   background-repeat: no-repeat;
@@ -299,12 +307,12 @@ body {
   text-align: right;
 }
 
-.nav__box-opened .nav__list {
+.nav__box .nav__list {
   display: block;
   text-align: left;
 }
 
-.nav__box-opened .nav__item {
+.nav__box .nav__item {
   padding: 1.45rem 0;
 }
 
