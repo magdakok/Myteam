@@ -28,7 +28,8 @@ body {
     }
 }
 
-.header__text-box {
+.header__text-box,
+.about__text-box {
     line-height: 2.8rem;
 }
 
@@ -92,5 +93,31 @@ body {
     a:hover,
     a:active {
         color: $color-primary-coral;
+    }
+}
+
+.footer-social__box {
+    a:hover path,
+    a:active path {
+        fill: $color-primary-coral;
+    }
+}
+
+.directors {
+    .heading-2 {
+        margin-bottom: 4rem;
+    }
+
+    
+    .director__person {
+        color: $color-blue-light;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    .director__position {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-style: italic;
     }
 }
