@@ -1,6 +1,5 @@
 .nav {
     background-color: $color-primary-green;
-    transition: all 0.5s;
 
     .logo {
         height: 3.2rem;
@@ -23,8 +22,20 @@
         text-decoration: none;
     }
 
+    &__background {
+        transition: all 0.5s ease-in-out;
+        position: fixed;
+        background-color: rgba(black, 0.5);
+        z-index: -1;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
     &__box {
-        transition: all 0.5s;
+        transition: all 0.5s ease-in-out;
         background-color: $color-blue;
         background-image: url(/img/bg-pattern-about-1-mobile-nav-1.svg);
         background-repeat: no-repeat;

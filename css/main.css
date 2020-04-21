@@ -258,8 +258,6 @@ body {
 
 .nav {
   background-color: #014E56;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .nav .logo {
@@ -288,9 +286,22 @@ body {
   text-decoration: none;
 }
 
+.nav__background {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 .nav__box {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: #2C6269;
   background-image: url(/img/bg-pattern-about-1-mobile-nav-1.svg);
   background-repeat: no-repeat;
