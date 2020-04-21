@@ -9,11 +9,11 @@ openNavIcon.addEventListener('click', function(){
     background.style.opacity='1';
     document.querySelector('body').style.overflowY= 'hidden';
 
-})
+});
 
 closeNavIcon.addEventListener('click', function(){
     menu.style.right='-68%';
     background.style.zIndex='-1';
     background.style.opacity='0';
     document.querySelector('body').style.overflowY= 'visible';
-})
+});
