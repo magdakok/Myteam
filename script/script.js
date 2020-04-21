@@ -1,30 +1,3 @@
-function loadSections() {
-  fetch("./sections/nav.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("nav").innerHTML = data;
-  });
-
-  fetch("./sections/cta-box.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector(".cta-box").innerHTML = data;
-  });
-
-fetch("./sections/footer.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("footer").innerHTML = data;
-  });
-}
-
-function navShow() {
   const openNavIcon = document.querySelector('#open-nav');
   const closeNavIcon = document.querySelector('#close-nav');
   const menu = document.querySelector('.nav__box');
@@ -44,16 +17,6 @@ function navShow() {
       background.style.opacity='0';
       document.querySelector('body').style.overflowY= 'visible';
   });
-}
 
-function checkVariable() {
-  if ( document.querySelector('.hamburger') != null ) {
-    navShow();
-  } else {
-    window.setTimeout("checkVariable();",100);
-  }
-} 
 
-loadSections();
-checkVariable();
 
