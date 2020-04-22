@@ -121,3 +121,31 @@
 .hide-back {
     transform: rotateY(180deg);
 }
+
+.clients {
+    background-color: $color-green-dark;
+
+    .wrapper {
+        padding-top: 8.8rem;
+        padding-bottom: 8.8rem;
+    }
+
+    .heading-2 {
+        margin-bottom: 5.6rem;
+    }
+
+    img {
+        display: block;
+        max-width: 22.5rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 4.5rem;
+        }
+
+        &:last-child {
+            max-width: 11.25rem;
+        }
+    }
+}
