@@ -134,6 +134,15 @@ body {
   font-style: italic;
 }
 
+.contact .heading-2 {
+  color: #F67E7E;
+}
+
+.contact__text {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
 .btn-contact {
   display: block;
   width: 15.3rem;
@@ -171,6 +180,17 @@ body {
   color: #002529 !important;
   background-color: #FFFFFF;
   border: 2px solid #FFFFFF;
+}
+
+.btn-submit {
+  display: block;
+  height: 4.8rem;
+  width: 12.3rem;
+  border-radius: 50px;
+  font-family: inherit;
+  background-color: #FFFFFF;
+  border: none;
+  font-size: 1.8rem;
 }
 
 .cta-box {
@@ -565,6 +585,104 @@ body {
 
 .clients img:last-child {
   max-width: 9rem;
+}
+
+.contact {
+  background-color: #014E56;
+  background-image: url(../img/bg-pattern-contact-2.svg);
+  background-repeat: no-repeat;
+  background-position: bottom -10rem right -10rem;
+}
+
+.contact .wrapper {
+  padding-top: 3.2rem;
+  padding-bottom: 11.7rem;
+}
+
+.contact__list {
+  padding: 4.4rem 0 5.9rem 0;
+}
+
+.contact__item {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__item:first-child img {
+  -webkit-transform: translateX(7px);
+          transform: translateX(7px);
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.contact__img-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 7.2rem;
+          flex: 0 0 7.2rem;
+  width: 7.2rem;
+  height: 7.2rem;
+  margin-right: 2.3rem;
+}
+
+.contact__img-box img {
+  height: 7.2rem;
+  right: 0;
+}
+
+.contact .form {
+  text-align: left;
+}
+
+.contact .form__group:not(:last-child) {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.contact .form input,
+.contact .form textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: #FFFFFF;
+  font-weight: 300;
+  padding: 1.5rem 2rem 0.5rem 2rem;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: transparent;
+  width: 100%;
+}
+
+.contact .form input:focus,
+.contact .form textarea:focus {
+  border-bottom: 1px solid #79C8C7;
+  outline: none;
+}
+
+.contact .form input:not(:focus):invalid,
+.contact .form textarea:not(:focus):invalid {
+  border-bottom: 1px solid #F67E7E;
+}
+
+.contact .form input:not(:focus):invalid ~ label,
+.contact .form textarea:not(:focus):invalid ~ label {
+  color: rgba(246, 126, 126, 0.7);
+}
+
+.contact .form label {
+  display: block;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  top: -1.5rem;
+  left: 0;
 }
 
 .wrapper {
