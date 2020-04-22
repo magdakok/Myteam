@@ -554,7 +554,7 @@ body {
 
 .clients img {
   display: block;
-  max-width: 22.5rem;
+  max-width: 18rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -564,7 +564,7 @@ body {
 }
 
 .clients img:last-child {
-  max-width: 11.25rem;
+  max-width: 9rem;
 }
 
 .wrapper {
