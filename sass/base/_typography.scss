@@ -121,3 +121,14 @@ body {
         font-style: italic;
     }
 }
+
+.contact {
+    .heading-2 {
+        color: $color-primary-coral;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+}

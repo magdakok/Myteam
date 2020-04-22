@@ -1,0 +1,89 @@
+.contact {
+    background-color: $color-primary-green;
+    background-image: url(../img/bg-pattern-contact-2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -10rem right -10rem;
+
+    .wrapper {
+        padding-top: 3.2rem;
+        padding-bottom: 11.7rem;
+    }
+
+    &__list {
+        padding: 4.4rem 0 5.9rem 0;
+    }
+
+    &__item {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+            img {
+                transform: translateX(7px);
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__img-box {
+        flex: 0 0 7.2rem;
+        width: 7.2rem;
+        height: 7.2rem;
+        margin-right: 2.3rem;
+
+        img {
+            height: 7.2rem;
+            right: 0;
+        }
+    }
+
+    .form {
+        text-align: left;
+   
+        &__group:not(:last-child) {
+                margin-bottom: 3rem;
+                position: relative;
+            }
+
+
+        input,
+        textarea {
+            font-family: inherit;
+            font-size: inherit;
+            color: $color-white;
+            font-weight: 300;
+            padding: 1.5rem 2rem 0.5rem 2rem;
+            border: none;
+            border-bottom: 1px solid $color-white;
+            background-color: transparent;
+            width: 100%;
+
+            &:focus {
+                border-bottom: 1px solid $color-blue-light;
+                outline: none;
+            }
+
+            &:not(:focus):invalid {
+                border-bottom: 1px solid $color-primary-coral;
+            }
+
+            // THIS SHOULD BE ACTIVATED AFTER CLICKING SUBMIT
+            &:not(:focus):invalid ~ label{
+                color: rgba($color-primary-coral, 0.7);
+            }
+        }
+
+        label {
+            display: block;
+            position: absolute;
+            color: rgba($color-white, 0.5);
+            top: -1.5rem;
+            left: 0;
+        }
+    }
+}
