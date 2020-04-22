@@ -2,7 +2,7 @@
     background-color: $color-primary-green;
     background-image: url(../img/bg-pattern-about-1-mobile-nav-1.svg);
     background-repeat: no-repeat;
-    background-position: 28rem 30vh;
+    background-position: bottom -10rem right -10rem;
 
     .wrapper {
         padding-top: 3.2rem;
@@ -12,9 +12,9 @@
 
 .directors {
     background-color: $color-blue-dark;
-    background-image: url(../img/bg-pattern-about-2-contact-1.svg);
+    background-image: url(../img/bg-pattern-about-2-contact-1.svg), url(../img/bg-pattern-home-4-about-3.svg);
     background-repeat: no-repeat;
-    background-position: -10rem -10rem;
+    background-position: top -10rem left -10rem, bottom right;
     .wrapper {
         padding-top: 8.8rem;
         padding-bottom: 8.8rem;
@@ -124,6 +124,9 @@
 
 .clients {
     background-color: $color-green-dark;
+    background-image: url(../img/bg-pattern-about-4.svg);
+    background-repeat: no-repeat;
+    background-position: top -10rem left -11rem;
 
     .wrapper {
         padding-top: 8.8rem;
