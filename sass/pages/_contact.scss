@@ -7,10 +7,16 @@
     .wrapper {
         padding-top: 3.2rem;
         padding-bottom: 11.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__list {
         padding: 4.4rem 0 5.9rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     &__item {
@@ -43,6 +49,7 @@
     }
 
     .form {
+        align-self: stretch;
         text-align: left;
    
         &__group:not(:last-child) {
