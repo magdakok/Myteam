@@ -96,7 +96,8 @@ body {
     }
 }
 
-.footer-social__box {
+.footer-social__box,
+.director__social-box {
     a:hover path,
     a:active path {
         fill: $color-primary-coral;
