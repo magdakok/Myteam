@@ -12,10 +12,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media only screen and (min-width: 40em) {
+            padding: 6.4rem $padding-tablet-small;
+        }
     }
 
     .hamburger {
         cursor: pointer;
+        @media only screen and (min-width: 40em) {
+            display: none;
+        }
     }
 
     &__link {
@@ -35,31 +42,63 @@
     }
 
     &__box {
-        transition: all 0.5s ease-in-out;
-        background-color: $color-blue;
-        background-image: url(/img/bg-pattern-about-1-mobile-nav-1.svg);
-        background-repeat: no-repeat;
-        background-position: 16rem 100%;
-        position: fixed;
-        top: 0;
-        right: -68%;
-        width: 68%;
-        height: 100%;
-        z-index: 10;
-        padding: 4.8rem;
-        text-align: right;
+        @media only screen and (max-width: 40em) {
+            transition: all 0.5s ease-in-out;
+            background-color: $color-blue;
+            background-image: url(/img/bg-pattern-about-1-mobile-nav-1.svg);
+            background-repeat: no-repeat;
+            background-position: 16rem 100%;
+            position: fixed;
+            top: 0;
+            right: -68%;
+            width: 68%;
+            height: 100%;
+            z-index: 10;
+            padding: 4.8rem;
+            text-align: right;
 
-        .hamburger {
-            margin-right: -$padding-mobile;
+            .hamburger {
+                margin-right: -$padding-mobile;
+            }
+
+            .nav__list {
+                display: block;
+                text-align: left;
+            }
+
+            .nav__item {
+                padding: 1.45rem 0;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 40em) {
+
+        .nav__box {
+            display: flex;
+            flex: 1 0 auto;
+            justify-content: space-between;
         }
 
         .nav__list {
-            display: block;
-            text-align: left;
+            display: flex;
+            
+            align-items: center;
+            margin-left: 7vw;
+            margin-right: auto;
+
         }
 
-        .nav__item {
-            padding: 1.45rem 0;
+        .nav__item:not(:last-child) {
+            margin-right: 4.3rem;
+        }
+
+        .nav__item:last-child {
+            margin-left: auto;
+        }
+
+        .btn-contact {
+           margin-right: 0;
         }
     }
 }

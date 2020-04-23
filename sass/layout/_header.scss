@@ -8,4 +8,12 @@
         padding-top: 3.2rem;
         padding-bottom: 20rem;
     }
+
+    &__text-box {
+        @media only screen and (min-width: 40em) {
+            width: 60vw;
+            margin: 2.3rem auto 0 auto;
+        }
+    }
+    
 }
