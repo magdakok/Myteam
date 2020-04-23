@@ -13,6 +13,25 @@
 
     .feature {
         margin-bottom: 4.5rem;
+
+        @media only screen and (min-width: 40em) {
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            grid-template-rows: repeat(2, min-content);
+            column-gap: 2rem;
+            row-gap: 1rem;
+            justify-items: start;
+
+            .paragraph {
+                grid-column: 2/3;
+                text-align: left;
+            }
+
+            img {
+                grid-row: 1/-1;
+            }
+
+        }
     }
    
 }
