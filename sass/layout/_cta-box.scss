@@ -9,7 +9,7 @@
     .wrapper {
         padding-top: 8.3rem;
         padding-bottom: 8.3rem;
-        @media only screen and (min-width: 40em) {
+        @media only screen and (min-width: 48em) {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -22,7 +22,7 @@
 
     .heading-2 {
         margin-bottom: 1.6rem;
-        @media only screen and (min-width: 40em) {
+        @media only screen and (min-width: 48em) {
             margin: 0;
         }
     }
