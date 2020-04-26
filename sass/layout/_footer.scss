@@ -5,6 +5,12 @@
     .wrapper {
         padding-top: 6.2rem;
         padding-bottom: 6.2rem;
+
+        @media only screen and (min-width: 40em) {
+            padding: 5.6rem $padding-tablet-small;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     a:link,
@@ -23,19 +29,35 @@
         justify-content: space-between;
         width: 10.7rem;
         margin: 0 auto;
+
+        @media only screen and (min-width: 40em) {
+            margin: 0;
+        }
     }
 
     &-nav__logo {
         margin-bottom: 2.7rem;
         width: 9.6rem;
+
+        @media only screen and (min-width: 40em) {
+            margin-bottom: 5.6rem;
+        }
     }
 
     &-nav {
         margin-bottom: 3rem;
+        @media only screen and (min-width: 40em) {
+            margin-bottom: 3.6rem;
+            text-align: left;
+        }
+        
     }
 
     &__address {
         line-height: 2.5rem;
+        @media only screen and (min-width: 40em) {
+            text-align: right;
+        }
     }
 
     &-social__box {
@@ -47,5 +69,18 @@
         width: 10.4rem;
         display: flex;
         justify-content: space-between;
+
+        @media only screen and (min-width: 40em) {
+            margin: 0;
+        }
+    }
+
+    &__copyright {
+        @media only screen and (min-width: 40em) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            text-align: right;
+        }
+        
     }
 }
