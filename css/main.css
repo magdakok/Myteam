@@ -45,7 +45,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 79em) {
+@media only screen and (min-width: 75em) {
   .heading-1 {
     font-size: 10rem;
     line-height: 10rem;
@@ -352,7 +352,9 @@ body {
 
 @media only screen and (min-width: 90em) {
   .header {
-    background-position: bottom right 16.5rem;
+    background-image: url(../img/bg-pattern-home-2.svg), url(../img/bg-pattern-home-1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right 16.5rem, top 5.5rem left -10rem;
   }
 }
 
@@ -749,7 +751,7 @@ body {
     background-color: #2C6269;
     background-image: url(/img/bg-pattern-about-1-mobile-nav-1.svg);
     background-repeat: no-repeat;
-    background-position: 16rem 100%;
+    background-position: bottom right -10rem;
     position: fixed;
     top: 0;
     right: -68%;
@@ -768,6 +770,12 @@ body {
   }
   .nav__box .nav__item {
     padding: 1.45rem 0;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .nav .btn-contact {
+    margin: 3rem 0 0 0;
   }
 }
 

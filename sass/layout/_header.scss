@@ -5,7 +5,9 @@
     background-position: bottom;
 
     @media only screen and (min-width: 90em) {
-        background-position: bottom right 16.5rem;
+        background-image: url(../img/bg-pattern-home-2.svg), url(../img/bg-pattern-home-1.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right 16.5rem, top 5.5rem left -10rem;
     }
 
     .wrapper {
