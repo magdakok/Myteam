@@ -4,6 +4,12 @@
     background-repeat: no-repeat;
     background-position: bottom -10rem right -10rem;
 
+    @media only screen and (min-width: 40em) {
+        background-image: url(../img/bg-pattern-contact-2.svg), url(../img/bg-pattern-about-2-contact-1.svg);
+        background-repeat: no-repeat;
+        background-position: bottom -3rem right -10rem, top left -10rem;
+    }
+
     .wrapper {
         padding-top: 3.2rem;
         padding-bottom: 11.7rem;
@@ -70,7 +76,7 @@
         }
 
         max-width: 54.2rem;
-        
+
         &__group:not(:last-child) {
                 margin-bottom: 3rem;
                 position: relative;

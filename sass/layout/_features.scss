@@ -6,9 +6,21 @@
     background-repeat: no-repeat;
     background-position: top right -10rem;
 
+    @media only screen and (min-width: 75em) {
+        background-position: bottom right -10rem;
+    }
+
     .wrapper {
         padding-top: 10rem;
         padding-bottom: 6.1rem;
+
+        @media only screen and (min-width: 75em) {
+            display: grid;
+            grid-template-columns: 40% 1fr;
+            column-gap: 13rem;
+            padding-top: 19.8rem;
+            padding-bottom: 10.1rem;
+        }
     }
 
     .feature {
@@ -19,7 +31,7 @@
             grid-template-columns: min-content 1fr;
             grid-template-rows: repeat(2, min-content);
             column-gap: 2rem;
-            row-gap: 1rem;
+            row-gap: 1.3rem;
             justify-items: start;
 
             .paragraph {
@@ -31,6 +43,9 @@
                 grid-row: 1/-1;
             }
 
+        }
+        @media only screen and (min-width: 75em) {
+            margin-bottom: 4.1rem;
         }
     }
    

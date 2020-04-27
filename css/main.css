@@ -45,10 +45,24 @@ body {
   }
 }
 
+@media only screen and (min-width: 79em) {
+  .heading-1 {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+}
+
 .heading-2 {
   font-size: 3.2rem;
   line-height: 3.2rem;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 75em) {
+  .heading-2 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
 }
 
 .heading-3 {
@@ -60,6 +74,23 @@ body {
 .header__text-box,
 .about__text-box {
   line-height: 2.8rem;
+}
+
+@media only screen and (min-width: 75em) {
+  .header__text-box,
+  .about__text-box {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  .header__text-box::before,
+  .about__text-box::before {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 4px;
+    background-color: #79C8C7;
+    margin-bottom: 8.1rem;
+  }
 }
 
 .color-coral {
@@ -82,6 +113,14 @@ body {
   }
 }
 
+@media only screen and (min-width: 75em) {
+  .features .heading-2 {
+    width: 100%;
+    margin-top: -5.75rem;
+    margin-bottom: 0;
+  }
+}
+
 .features .heading-2::before {
   content: '';
   display: block;
@@ -89,6 +128,12 @@ body {
   height: 4px;
   background-color: #F67E7E;
   margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 75em) {
+  .features .heading-2::before {
+    margin-bottom: 5.8rem;
+  }
 }
 
 .features .heading-3 {
@@ -107,6 +152,23 @@ body {
   .stories .heading-2 {
     margin: 0 auto;
     width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .stories .heading-2 {
+    width: 65vw;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .stories__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 4rem;
+            column-gap: 4rem;
   }
 }
 
@@ -270,15 +332,62 @@ body {
   background-position: bottom;
 }
 
+@media only screen and (min-width: 90em) {
+  .header {
+    background-position: bottom right 16.5rem;
+  }
+}
+
 .header .wrapper {
   padding-top: 3.2rem;
   padding-bottom: 20rem;
+}
+
+@media only screen and (min-width: 75em) {
+  .header .wrapper {
+    padding-top: 7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .header .wrapper {
+    padding-bottom: 22.5rem;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .header .heading-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 40em) {
   .header__text-box {
     width: 60vw;
     margin: 2.3rem auto 0 auto;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .header__text-box {
+    margin-left: 11rem;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .header__text-box {
+    margin-top: -1.4rem;
   }
 }
 
@@ -290,9 +399,28 @@ body {
   background-position: top right -10rem;
 }
 
+@media only screen and (min-width: 75em) {
+  .features {
+    background-position: bottom right -10rem;
+  }
+}
+
 .features .wrapper {
   padding-top: 10rem;
   padding-bottom: 6.1rem;
+}
+
+@media only screen and (min-width: 75em) {
+  .features .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 1fr;
+        grid-template-columns: 40% 1fr;
+    -webkit-column-gap: 13rem;
+            column-gap: 13rem;
+    padding-top: 19.8rem;
+    padding-bottom: 10.1rem;
+  }
 }
 
 .features .feature {
@@ -311,7 +439,7 @@ body {
         grid-template-rows: repeat(2, min-content);
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
-    row-gap: 1rem;
+    row-gap: 1.3rem;
     justify-items: start;
   }
   .features .feature .paragraph {
@@ -322,6 +450,12 @@ body {
   }
   .features .feature img {
     grid-row: 1/-1;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .features .feature {
+    margin-bottom: 4.1rem;
   }
 }
 
@@ -342,6 +476,18 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .footer .wrapper {
+    padding: 6.2rem 9.7rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .footer .wrapper {
+    padding: 6.2rem 16.5rem;
   }
 }
 
@@ -445,6 +591,12 @@ body {
   height: 3.2rem;
 }
 
+@media only screen and (min-width: 90em) {
+  .nav .logo {
+    height: 4rem;
+  }
+}
+
 .nav .wrapper {
   padding-top: 4.8rem;
   padding-bottom: 4.8rem;
@@ -462,6 +614,18 @@ body {
 @media only screen and (min-width: 40em) {
   .nav .wrapper {
     padding: 6.4rem 3.9rem;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .nav .wrapper {
+    padding: 6.4rem 9.7rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .nav .wrapper {
+    padding: 7.3rem 16.5rem;
   }
 }
 
@@ -543,6 +707,15 @@ body {
     margin-left: 7vw;
     margin-right: auto;
   }
+}
+
+@media only screen and (min-width: 40em) and (min-width: 40em) {
+  .nav .nav__list {
+    margin-left: 5.6vw;
+  }
+}
+
+@media only screen and (min-width: 40em) {
   .nav .nav__item:not(:last-child) {
     margin-right: 4.3rem;
   }
@@ -564,8 +737,8 @@ body {
 }
 
 .stories .wrapper {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
+  padding-top: 14.5rem;
+  padding-bottom: 15.1rem;
 }
 
 .stories .story {
@@ -576,13 +749,34 @@ body {
   background-position: top;
 }
 
+@media only screen and (min-width: 75em) {
+  .stories .story {
+    padding-top: 4.7rem;
+    background-size: 18%;
+    background-position: top;
+  }
+}
+
 .stories .story__person {
   display: block;
+}
+
+@media only screen and (min-width: 75em) {
+  .stories .story__person {
+    margin-top: 2.6rem;
+  }
 }
 
 .stories .story__position {
   display: block;
   margin-bottom: 1.7rem;
+}
+
+@media only screen and (min-width: 75em) {
+  .stories .story__position {
+    margin-top: 0.4rem;
+    margin-bottom: 3.1rem;
+  }
 }
 
 .stories .story__photo-box {
@@ -841,6 +1035,14 @@ body {
   background-position: bottom -10rem right -10rem;
 }
 
+@media only screen and (min-width: 40em) {
+  .contact {
+    background-image: url(../img/bg-pattern-contact-2.svg), url(../img/bg-pattern-about-2-contact-1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -3rem right -10rem, top left -10rem;
+  }
+}
+
 .contact .wrapper {
   padding-top: 3.2rem;
   padding-bottom: 11.7rem;
@@ -1000,6 +1202,13 @@ body {
   .wrapper {
     padding-left: 9.7rem;
     padding-right: 9.7rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .wrapper {
+    padding-left: 16.5rem;
+    padding-right: 16.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,9 @@
 
     .logo {
         height: 3.2rem;
+        @media only screen and (min-width: 90em) {
+            height: 4rem;
+        }
     }
     
     .wrapper {
@@ -16,6 +19,13 @@
         @media only screen and (min-width: 40em) {
             padding: 6.4rem $padding-tablet-small;
         }
+        @media only screen and (min-width: 75em) {
+            padding: 6.4rem $padding-tablet-large;
+        }
+        @media only screen and (min-width: 90em) {
+            padding: 7.3rem $padding-desktop;
+        }
+        
     }
 
     .hamburger {
@@ -86,6 +96,9 @@
             align-items: center;
             margin-left: 7vw;
             margin-right: auto;
+            @media only screen and (min-width: 40em) {
+                margin-left: 5.6vw;
+            }
 
         }
 

@@ -8,8 +8,8 @@
     background-position: top left, bottom -10.1rem right 0;
 
     .wrapper {
-        padding-top: 14rem;
-        padding-bottom: 14rem;
+        padding-top: 14.5rem;
+        padding-bottom: 15.1rem;
     }
 
     .story {
@@ -20,13 +20,26 @@
         background-repeat: no-repeat;
         background-position: top;   
 
+        @media only screen and (min-width: 75em) {
+            padding-top: 4.7rem;
+            background-size: 18%;
+            background-position: top;
+        }
+
         &__person {
             display: block;
+            @media only screen and (min-width: 75em) {
+                margin-top: 2.6rem;
+            }
         }
 
         &__position {
             display: block;
-            margin-bottom: 1.7rem;
+            margin-bottom: 1.7rem; 
+            @media only screen and (min-width: 75em) {
+                margin-top: 0.4rem;
+                margin-bottom: 3.1rem;
+            }
         }
 
         &__photo-box {

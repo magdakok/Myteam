@@ -11,6 +11,12 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
+        @media only screen and (min-width: 75em) {
+            padding: 6.2rem $padding-tablet-large;
+        }
+        @media only screen and (min-width: 90em) {
+            padding: 6.2rem $padding-desktop;
+        }
     }
 
     a:link,

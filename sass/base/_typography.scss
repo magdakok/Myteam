@@ -17,12 +17,20 @@ body {
             font-size: 6.4rem;
             line-height: 5.6rem;
         }
+        @media only screen and (min-width: 79em) {
+            font-size: 10rem;
+            line-height: 10rem;
+        }
     }
 
     &-2 {
         font-size: 3.2rem;
         line-height: 3.2rem;
         font-weight: 700;
+        @media only screen and (min-width: 75em) {
+            font-size: 4.8rem;
+            line-height: 4.8rem;
+        }
 
     
     }
@@ -37,6 +45,19 @@ body {
 .header__text-box,
 .about__text-box {
     line-height: 2.8rem;
+    @media only screen and (min-width: 75em) {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 5rem;
+            height: 4px;
+            background-color: $color-blue-light;
+            margin-bottom: 8.1rem;
+        }
+    }
 }
 
 .color-coral {
@@ -56,6 +77,11 @@ body {
         @media only screen and (min-width: 40em) {
             width: 60vw;
         }
+        @media only screen and (min-width: 75em) {
+            width: 100%;
+            margin-top: -5.75rem;
+            margin-bottom: 0;
+        }
 
         &::before {
             content: '';
@@ -64,6 +90,9 @@ body {
             height: 4px;
             background-color: $color-primary-coral;
             margin-bottom: 5rem;
+            @media only screen and (min-width: 75em) {
+                margin-bottom: 5.8rem;
+            }
         }
     }
     .heading-3 {
@@ -82,6 +111,17 @@ body {
         @media only screen and (min-width: 40em) {
             margin: 0 auto;
             width: 60vw;
+        }
+        @media only screen and (min-width: 75em) {
+            width: 65vw;
+        }
+    }
+
+    &__list {
+        @media only screen and (min-width: 75em) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 4rem;
         }
     }
     .story__paragraph {

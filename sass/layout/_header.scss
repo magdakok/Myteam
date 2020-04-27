@@ -4,15 +4,44 @@
     background-repeat: no-repeat;
     background-position: bottom;
 
+    @media only screen and (min-width: 90em) {
+        background-position: bottom right 16.5rem;
+    }
+
     .wrapper {
         padding-top: 3.2rem;
         padding-bottom: 20rem;
+
+        @media only screen and (min-width: 75em) {
+            padding-top: 7rem;
+            display: flex;
+        }
+        @media only screen and (min-width: 90em) {
+            padding-bottom: 22.5rem;
+        }
+    }
+
+    .heading-1 {
+        @media only screen and (min-width: 75em) {
+            flex: 0 1 50%;
+            text-align: left;
+        }
     }
 
     &__text-box {
         @media only screen and (min-width: 40em) {
             width: 60vw;
             margin: 2.3rem auto 0 auto;
+            
+        }
+        @media only screen and (min-width: 75em) {
+            margin-left: 11rem;
+            width: 100%;
+            flex: 1;
+            text-align: left;
+        }
+        @media only screen and (min-width: 90em) {
+            margin-top: -1.4rem;
         }
     }
     
