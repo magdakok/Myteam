@@ -293,6 +293,12 @@ body {
   color: #012F34;
 }
 
+@media only screen and (min-width: 90em) {
+  .cta-box {
+    background-position: bottom left;
+  }
+}
+
 .cta-box .wrapper {
   padding-top: 8.3rem;
   padding-bottom: 8.3rem;
@@ -312,6 +318,12 @@ body {
   }
   .cta-box .wrapper .btn-contact {
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .cta-box .wrapper {
+    padding: 7.6rem 18.3vw;
   }
 }
 
