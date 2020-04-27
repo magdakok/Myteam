@@ -751,7 +751,7 @@ body {
     background-color: #2C6269;
     background-image: url(/img/bg-pattern-about-1-mobile-nav-1.svg);
     background-repeat: no-repeat;
-    background-position: 16rem 100%;
+    background-position: bottom right -10rem;
     position: fixed;
     top: 0;
     right: -68%;
@@ -770,6 +770,12 @@ body {
   }
   .nav__box .nav__item {
     padding: 1.45rem 0;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .nav .btn-contact {
+    margin: 3rem 0 0 0;
   }
 }
 

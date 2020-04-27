@@ -57,7 +57,7 @@
             background-color: $color-blue;
             background-image: url(/img/bg-pattern-about-1-mobile-nav-1.svg);
             background-repeat: no-repeat;
-            background-position: 16rem 100%;
+            background-position: bottom right -10rem;
             position: fixed;
             top: 0;
             right: -68%;
@@ -82,8 +82,14 @@
         }
     }
 
-    @media only screen and (min-width: 40em) {
+    @media only screen and (max-width: 40em) {
+        .btn-contact {
+            margin: 3rem 0 0 0;
+        } 
+    }
+    
 
+    @media only screen and (min-width: 40em) {
         .nav__box {
             display: flex;
             flex: 1 0 auto;
