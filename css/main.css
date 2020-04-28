@@ -1144,6 +1144,12 @@ body {
   background-position: top -10rem left -11rem;
 }
 
+@media only screen and (min-width: 90em) {
+  .clients {
+    background-position: top left;
+  }
+}
+
 .clients .wrapper {
   padding-top: 8.8rem;
   padding-bottom: 8.8rem;
@@ -1156,8 +1162,23 @@ body {
   }
 }
 
+@media only screen and (min-width: 90em) {
+  .clients .wrapper {
+    padding-left: 16.5rem;
+    padding-right: 16.5rem;
+    padding-top: 14.7rem;
+    padding-bottom: 12.2rem;
+  }
+}
+
 .clients .heading-2 {
   margin-bottom: 5.6rem;
+}
+
+@media only screen and (min-width: 90em) {
+  .clients .heading-2 {
+    margin-bottom: 4rem;
+  }
 }
 
 @media only screen and (min-width: 40em) {
