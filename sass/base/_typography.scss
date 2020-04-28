@@ -194,6 +194,9 @@ body {
 .directors {
     .heading-2 {
         margin-bottom: 4rem;
+        @media only screen and (min-width: 90em) {
+            margin-bottom: 4rem;
+        }
     }
 
     

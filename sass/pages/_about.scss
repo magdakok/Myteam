@@ -19,7 +19,6 @@
         }
     }
 
-// NOT FINISHED YET (FLEX AND STUFF)
     &__text-box {
         @media only screen and (min-width: 40em) {
             width: 60vw;
@@ -43,6 +42,9 @@
         display: flex;
         justify-content: center;
     }
+    @media only screen and (min-width: 90em) {
+        background-position: top left -10rem, bottom right;
+    }
     .wrapper {
         padding-top: 8.8rem;
         padding-bottom: 8.8rem;
@@ -53,6 +55,13 @@
             display: grid;
             grid-template-columns: repeat(2, minmax(23rem, 40rem));
             column-gap: 1.2rem;
+        }
+        @media only screen and (min-width: 90em) {
+            padding-top: 14.5rem;
+            padding-bottom: 11.8rem;
+            grid-template-columns: repeat(3, 35rem);
+            column-gap: 3rem;
+            row-gap: 2rem;
         }
     }
 
