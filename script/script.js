@@ -14,6 +14,7 @@
 
   openNavIcon.addEventListener('click', navMenu);
   closeNavIcon.addEventListener('click', navMenu);
+  background.addEventListener('click', navMenu);
 
 
 
