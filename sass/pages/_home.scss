@@ -10,3 +10,12 @@
         padding-right: $padding-desktop;
     }
 }
+
+.scrolling {
+    overflow-y: visible;
+
+}
+
+.no-scrolling {
+    overflow-y: hidden;
+}

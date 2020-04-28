@@ -3,20 +3,17 @@
   const menu = document.querySelector('.nav__box');
   const background = document.querySelector('.nav__background');
 
-  openNavIcon.addEventListener('click', function(){
-      menu.style.right='0';
-      background.style.zIndex='2';
-      background.style.opacity='1';
-      document.querySelector('body').style.overflowY= 'hidden';
+  function navMenu() {
+    menu.classList.toggle('nav__box--open');
+    menu.classList.toggle('nav__box--hidden');
+    background.classList.toggle('nav__background--invisible');
+    background.classList.toggle('nav__background--visible');
+    document.querySelector('body').classList.toggle('scrolling');
+    document.querySelector('body').classList.toggle('no-scrolling');
+  }
 
-  });
-
-  closeNavIcon.addEventListener('click', function(){
-      menu.style.right='-68%';
-      background.style.zIndex='-1';
-      background.style.opacity='0';
-      document.querySelector('body').style.overflowY= 'visible';
-  });
+  openNavIcon.addEventListener('click', navMenu);
+  closeNavIcon.addEventListener('click', navMenu);
 
 
 
