@@ -49,7 +49,18 @@
     width: 12.3rem;
     border-radius: 50px;
     font-family: inherit;
-    background-color: $color-white;
     border: none;
-    font-size: 1.8rem ;
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    &:link,
+    &:visited {
+        background-color: $color-white;
+    }
+
+    &:hover,
+    &:active {
+        color: $color-green-vdark;
+        background-color: $color-blue-light;
+    }
 }

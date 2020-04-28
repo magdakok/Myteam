@@ -320,9 +320,18 @@ body {
   width: 12.3rem;
   border-radius: 50px;
   font-family: inherit;
-  background-color: #FFFFFF;
   border: none;
   font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.btn-submit:link, .btn-submit:visited {
+  background-color: #FFFFFF;
+}
+
+.btn-submit:hover, .btn-submit:active {
+  color: #002529;
+  background-color: #79C8C7;
 }
 
 .cta-box {
