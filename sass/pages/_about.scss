@@ -177,6 +177,10 @@
     background-repeat: no-repeat;
     background-position: top -10rem left -11rem;
 
+    @media only screen and (min-width: 90em) {
+        background-position: top left;
+    }
+
     .wrapper {
         padding-top: 8.8rem;
         padding-bottom: 8.8rem;
@@ -184,10 +188,19 @@
             padding-left: 3rem;
             padding-right: 3rem;
         }
+        @media only screen and (min-width: 90em) {
+            padding-left: $padding-desktop;
+            padding-right: $padding-desktop;
+            padding-top: 14.7rem;
+            padding-bottom: 12.2rem;
+        }
     }
 
     .heading-2 {
         margin-bottom: 5.6rem;
+        @media only screen and (min-width: 90em) {
+            margin-bottom: 4rem;
+        }  
     }
 
     &__box {
