@@ -85,8 +85,6 @@ body {
     }
 }
 
-
-
 .color-coral {
     color: $color-primary-coral;
 }
@@ -197,9 +195,7 @@ body {
         @media only screen and (min-width: 90em) {
             margin-bottom: 4rem;
         }
-    }
-
-    
+    } 
     .director__person {
         color: $color-blue-light;
         font-size: 1.8rem;
@@ -214,7 +210,6 @@ body {
 }
 
 .contact {
-    
     .heading-1 {
         @media only screen and (min-width: 90em) {
             font-size: 6.4rem;
@@ -225,7 +220,6 @@ body {
         @media only screen and (min-width: 90em) {
             font-size: 3.2rem;
         }
-        
     }
 
     &__text {
