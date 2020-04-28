@@ -214,8 +214,18 @@ body {
 }
 
 .contact {
+    
+    .heading-1 {
+        @media only screen and (min-width: 90em) {
+            font-size: 6.4rem;
+        }
+    }
     .heading-2 {
         color: $color-primary-coral;
+        @media only screen and (min-width: 90em) {
+            font-size: 3.2rem;
+        }
+        
     }
 
     &__text {
