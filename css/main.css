@@ -673,6 +673,11 @@ body {
           justify-content: space-between;
 }
 
+.footer-social a:last-of-type {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
 @media only screen and (min-width: 40em) {
   .footer-social {
     margin: 0;
