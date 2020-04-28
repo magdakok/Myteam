@@ -227,11 +227,9 @@ body {
   color: #F67E7E;
 }
 
-.footer-social__box a:hover path,
-.footer-social__box a:active path,
-.director__social-box a:hover path,
-.director__social-box a:active path {
-  fill: #F67E7E;
+.director__social-box a:hover svg path,
+.director__social-box a:active svg path {
+  fill: #F67E7E !important;
 }
 
 .directors .heading-2 {
@@ -676,6 +674,11 @@ body {
 .footer-social a:last-of-type {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
+}
+
+.footer-social a:hover svg path,
+.footer-social a:active svg path {
+  fill: #F67E7E !important;
 }
 
 @media only screen and (min-width: 40em) {
@@ -1215,7 +1218,7 @@ body {
 }
 
 .clients .img-box:last-child {
-  width: 40%;
+  width: 20%;
   margin-left: auto;
   margin-right: auto;
 }

@@ -183,11 +183,11 @@ body {
     }
 }
 
-.footer-social__box,
+
 .director__social-box {
-    a:hover path,
-    a:active path {
-        fill: $color-primary-coral;
+    a:hover svg path,
+    a:active svg path {
+        fill: $color-primary-coral !important;
     }
 }
 

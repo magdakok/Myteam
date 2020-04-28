@@ -105,6 +105,11 @@
             transform: translateY(3px);
         }
 
+        a:hover svg path,
+        a:active svg path {
+        fill: $color-primary-coral !important;
+    }
+
         @media only screen and (min-width: 40em) {
             margin: 0;
         }
