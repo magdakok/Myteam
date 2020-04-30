@@ -2,11 +2,12 @@
 const label = document.querySelectorAll('label');
 const submit = document.querySelector('.btn-submit');
 const input = document.querySelectorAll('input');
+const textarea = document.querySelector('textarea');
 
 submit.addEventListener('click', function(){
     const invalidInput = document.querySelectorAll('input:invalid');
     const invalidTextarea = document.querySelector('textarea:invalid');
-    invalidInput.forEach((inp,i)=> {
+    invalidInput.forEach( inp => {
         inp.classList.add('invalid-input');
         inp.nextElementSibling.classList.add('invalid-label');
     });
@@ -14,8 +15,20 @@ submit.addEventListener('click', function(){
     invalidTextarea.nextElementSibling.classList.add('invalid-label');
 });
 
-input.forEach((inp,i)=> {
+input.forEach( inp => {
     inp.addEventListener('focusout', function(){
-        //here check if input is valid now
+        if (inp.validity.valid)  {
+            inp.classList.remove('invalid-input');
+            inp.nextElementSibling.classList.remove('invalid-label');
+        }
     });
 });
+
+textarea.addEventListener('focusout', function(){
+    if (textarea.validity.valid) {
+        textarea.classList.remove('invalid-input');
+        textarea.nextElementSibling.classList.remove('invalid-label');
+    }
+});
+
+
