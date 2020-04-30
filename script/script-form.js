@@ -4,6 +4,7 @@ const submit = document.querySelector('.btn-submit');
 const input = document.querySelectorAll('input');
 const textarea = document.querySelector('textarea');
 
+// after clicking submit color invalid inputs red
 submit.addEventListener('click', function(){
     const invalidInput = document.querySelectorAll('input:invalid');
     const invalidTextarea = document.querySelector('textarea:invalid');
@@ -15,6 +16,7 @@ submit.addEventListener('click', function(){
     invalidTextarea.nextElementSibling.classList.add('invalid-label');
 });
 
+// checks if invalid inputs change to valid after focusing out
 input.forEach( inp => {
     inp.addEventListener('focusout', function(){
         if (inp.validity.valid)  {
@@ -30,5 +32,3 @@ textarea.addEventListener('focusout', function(){
         textarea.nextElementSibling.classList.remove('invalid-label');
     }
 });
-
-
