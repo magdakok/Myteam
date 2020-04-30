@@ -1455,13 +1455,11 @@ body {
   outline: none;
 }
 
-.contact .form input:not(:focus):invalid,
-.contact .form textarea:not(:focus):invalid {
+.contact .form .invalid-input {
   border-bottom: 1px solid #F67E7E;
 }
 
-.contact .form input:not(:focus):invalid ~ label,
-.contact .form textarea:not(:focus):invalid ~ label {
+.contact .form .invalid-label {
   color: rgba(246, 126, 126, 0.7);
 }
 

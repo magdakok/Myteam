@@ -122,15 +122,15 @@
                 border-bottom: 1px solid $color-blue-light;
                 outline: none;
             }
+        }
 
-            &:not(:focus):invalid {
-                border-bottom: 1px solid $color-primary-coral;
-            }
+        .invalid-input {
+            border-bottom: 1px solid $color-primary-coral;
+        }
 
-            // THIS SHOULD BE ACTIVATED AFTER CLICKING SUBMIT
-            &:not(:focus):invalid ~ label{
-                color: rgba($color-primary-coral, 0.7);
-            }
+        // for label
+        .invalid-label {
+            color: rgba($color-primary-coral, 0.7);
         }
 
         label {
